@@ -1,0 +1,84 @@
+.homecrypto__spash {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    transition: opacity .5s, transform .5s;   
+    background-repeat: no-repeat;
+}
+.homecrypto-logo {
+    position: fixed;
+    bottom:50% ;
+    left: 30px;
+    transform: translateY(50%);
+    transition: .8s;
+}
+.is-splash-postload .homecrypto__spash {
+    opacity: 0; 
+    transform: translateY(-10vw);
+}
+.is-splash-postload .homecrypto-logo  {
+    bottom: 30px;
+  z-index: 1;
+ 
+    transform: translateY(0);
+}
+.homecrypto {
+    height: 100vh;
+    overflow: hidden;
+}
+.homecrypto__list {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.homecrypto-list-item {
+    position: absolute;
+    left: 0;
+}
+.homecrypto-list-item-container {
+    opacity: 0;
+  
+    transform: scale(0.5);
+    transition: opacity .5s,transform .5s cubic-bezier(.65,0,.35,1);
+    
+}
+.homecrypto-list-item-container img {
+    transition:transform .5s ;
+    max-width: 100%;
+    height: auto;
+   
+}
+.is-splash-postload .homecrypto-list-item-container {
+    opacity: 1;
+    transform: scale(1);
+}
+.is-splash-postload .homecrypto-list-item-container img:hover {
+    transform: scale(1.1);
+}
+
+.is-splash-postload.is-content .homecrypto-list-item-container {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.header {
+    transform: translateY(-100%);
+    transition: transform .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header.is-content {
+    transform: translateY(0);
+}
+
+.is-content .homecrypto-logo {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    opacity: 0;
+}

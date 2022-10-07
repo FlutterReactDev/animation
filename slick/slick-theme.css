@@ -1,0 +1,245 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+   
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+
+
+
+
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.auctions-sl2 .slick-prev
+{   
+    display: none !important;
+    left: 20px;
+    background: url(../images/slider-arrow.svg) 50% 50% no-repeat;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    border-radius: 50%;
+    top:42%;
+    transform: rotate(180deg);
+    border:2px solid #FFFFFF;
+    box-sizing: border-box;
+    z-index:    1;
+}
+
+
+
+.auctions-sl .slick-prev
+{   
+    display: none !important;
+    left: 20px;
+    background: url(../images/slider-arrow.svg) 50% 50% no-repeat;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    border-radius: 50%;
+    top:42%;
+    transform: rotate(180deg);
+    border:2px solid #FFFFFF;
+    box-sizing: border-box;
+    z-index:    1;
+}
+
+.people .slick-prev
+{   
+    top: -68px;
+    right: 122px;
+    background: #161519 url(../images/slider-arrow.svg) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    transition: 0.3s;
+   
+    border: 1px solid #424045;
+    border-radius: 12px;
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+    z-index: 12;
+}
+
+
+
+
+.slick-prev:hover {
+    
+}
+
+
+.auctions-sl2 .slick-next
+{
+    right: 0;
+    background: url(../images/slayder-arrow.svg) 50% 50% no-repeat;
+    width: 48px;
+    display: none !important;
+    height: 48px;
+    top: 57%;
+    transition: 0.3s;
+    border-radius: 12px;
+    border:2px solid #EF915C;
+    box-sizing: border-box;
+}
+
+.auctions-sl .slick-next
+{
+    right: -55px;
+    background: url(../images/slayder-arrow.svg) 50% 50% no-repeat;
+    width: 48px;
+    
+    height: 48px;
+    top: 57%;
+    transition: 0.3s;
+    border-radius: 12px;
+    border:2px solid #EF915C;
+    box-sizing: border-box;
+}
+
+.people .slick-next
+{
+    right: 48px;
+    background: #161519 url(../images/slider-arrow.svg) 50% 50% no-repeat;
+    width: 48px;
+    z-index: 12;
+    height: 48px;
+    top: -92px;
+    transition: 0.3s;
+    border: 1px solid #424045;
+    border-radius: 12px;
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+}
+
+
+.head-slider .slick-next {
+   background: url(../images/next-pic.svg) 50% 50% no-repeat;
+    width: 49px;
+    height: 18px;
+    right: 48px;
+    bottom: -40px;
+    top: unset;
+}
+
+
+
+.slick-next:hover {
+    
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -50px;
+
+    display: none !important;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+    background: #E5E5E5;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+}
+
+
+.slick-active button {
+    background: #636263 !important;
+}
+
